@@ -1,0 +1,121 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.navbar{
+    padding: 8px 16px;
+    letter-spacing: 1.2px;
+    background: white !important;
+}
+.nav-item{
+    margin: 0px 16px;
+}
+.nav-link{
+    font-family: playfair display;
+    color: #222;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 18px;
+    font-weight: 300;
+}
+.nav-link:hover{
+    color: #004f7f;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
+}
+.cta-btn{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 24px !important;
+    background: white;
+    color: #004f7f;
+    border: 1px solid #004f7f;
+}
+.cta-btn:hover{
+    background: #004f7f;
+    color: white;
+}
+
+.title-heading{
+    font-family: playfair display;
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.title-box hr{
+    color: black;
+    width: 120px;
+    border-color: black;
+}
+.abt-text{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 16px 0;
+}
+.site-section{
+    padding: 40px 0   !important;
+}
+.our-rooms{
+    background: #f8f9fa 
+}
+.room-card{
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+.room-img-box{
+    overflow: hidden;
+    transition: all 0.25s ease;
+}
+.room-img-box img{
+    transition: all 0.25s ease;
+}
+.room-card:hover .room-img-box img{
+    transform: scale(1.2);
+    transition: all 0.25s ease;
+}
+.room-card-text{
+    padding: 16px;
+    text-align: center;
+}
+.room-title{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: black;
+}
+.book-now-btn{
+    position: absolute;
+    top: calc(100vh -  80px);
+    left: 50vw;
+    z-index: 99;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 24px !important;
+    background: #004f7f;
+    color:white;
+    border: 1px solid #004f7f;
+}
+.book-now-btn:hover{
+    background: white;
+    color: #004f7f;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        text-align: center;
+    }
+    .navbar-toggler{
+        border-color: black;
+        color: black;
+        padding: 8px !important;
+    }
+    .navbar-toggler-icon{
+        color: black;
+    }
+}

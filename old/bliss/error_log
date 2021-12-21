@@ -1,0 +1,10 @@
+[15-Aug-2019 13:41:13 UTC] PHP Notice:  Undefined index: name in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 4
+[15-Aug-2019 13:41:13 UTC] PHP Notice:  Undefined index: email in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 5
+[15-Aug-2019 13:41:13 UTC] PHP Notice:  Undefined index: phone in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 6
+[15-Aug-2019 13:41:13 UTC] PHP Notice:  Undefined index: msg in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 7
+[15-Aug-2019 13:41:13 UTC] PHP Notice:  Undefined index: country in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 8
+[26-Aug-2019 13:29:21 UTC] PHP Notice:  Undefined index: name in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 4
+[26-Aug-2019 13:29:21 UTC] PHP Notice:  Undefined index: email in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 5
+[26-Aug-2019 13:29:21 UTC] PHP Notice:  Undefined index: phone in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 6
+[26-Aug-2019 13:29:21 UTC] PHP Notice:  Undefined index: msg in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 7
+[26-Aug-2019 13:29:21 UTC] PHP Notice:  Undefined index: country in /home/p7u4ltt5aicv/public_html/hotelparklane.in/mail_handler.php on line 8

@@ -1,0 +1,1550 @@
+// @import url("https://fonts.googleapis.com/css2?family=Montez&family=Noto+Sans+SC:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Open+Sans:wght@300&display=swap');
+
+$colors: (
+  color1: #aeaf7b,
+  color2: #e8288f,
+  color3: #ffffff,
+  color4: #000000,
+  color5: #30aabc,
+  color6: #e7298f,
+  color7: #832161,
+);
+
+@function color($colorname) {
+  @return map-get($map: $colors, $key: $colorname);
+}
+
+h1,
+h2 {
+  font-family: "Montez", cursive;
+}
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  padding: 0 1% !important;
+  margin: 0 !important;
+  background-color: color(color3);
+  div {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          text-transform: lowercase;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 300 !important;
+          color: color(color7);
+        }
+        .nav-link:hover{
+          color: black;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+.nav1 {
+  padding: 0 1% !important;
+  margin: 0 !important;
+  background-color: #fdfefd;
+  // background: linear-gradient(to right, #ffffff, #fdfefd, #e2e9e1);
+  div {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          text-transform: capitalize;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 900;
+          color: color(color7);
+        }
+
+      }
+      .dropdown:hover {
+        .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.hospitality-introduction {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // background-color: #000;
+  font-weight: 200;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/cover_bg_1.jpg) center center no-repeat;
+  background-size: cover;
+  .homepage-introduction {
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      padding: 0 3rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      text-transform: capitalize;
+      font-weight: 700;
+      .span1{
+        font-family: "Montez", cursive;
+        font-size: 4rem;
+      }
+    }
+    .main-description {
+      font-weight: 200;
+    }
+  }
+  /* Cursor */
+  .txt-type {
+    .txt {
+      border-right: 0.1rem solid #777;
+    }
+  }
+  /* Cursor */
+
+  #carouselExampleIndicators {
+    .carousel-inner {
+      .carousel-item {
+        height: 100vh;
+        .carousel-caption {
+          background-color: rgba(0, 0, 0, 0.2);
+          top: 50%;
+          bottom: 25%;
+          h1 {
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+  .hm-introduction {
+    height: 90vh;
+    display: flex;
+    text-shadow: 4px 4px #000000;
+    // border: 3px solid #E7298F;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+    // background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)), url(../img/main-image.jpg) center center no-repeat;
+    background-size: cover;
+    h1 {
+      font-size: 50px;
+      font-weight: 900;
+      color: color(color3);
+    }
+  }
+  .view-more {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    color: color(color6);
+  }
+}
+
+.post-covid-19{
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4)), url(../img/post-covid19-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 2% 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .container{
+    h3{
+      color: white;
+    }
+    .flexbox-content{
+      display: flex;
+      justify-content: space-between;
+      h4{
+        color: white;
+        a{
+          color: white;
+          border: 2px solid white;
+          padding: 6px;
+        }
+        a:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.homepage-services-section {
+  padding: 2% 0;
+
+  .container {
+    .row {
+      .col-12 {
+        h2 {
+          color: #000000;
+          text-align: center;
+          font-family: "Montez", cursive;
+          font-size: 40px;
+        }
+      }
+      .col-md-4 {
+        margin: 2% 0;
+        .service-tab {
+          background-color: #fff;
+          border-radius: 10px;
+
+          border: 1px solid rgba($color: #000000, $alpha: 1);
+          a {
+            .img {
+              height: 300px;
+              border-radius: 7px 7px 0px 0px;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              P {
+                display: none;
+                color: white;
+                background-color: rgba($color: #000000, $alpha: 0.7);
+                text-align: center;
+                padding: 1%;
+                margin: 6%;
+              }
+            }
+            .service-name {
+              text-align: center;
+              h4 {
+                color: #000;
+                padding: 2% 0;
+              }
+            }
+          }
+          a:hover {
+            text-decoration: none;
+            .img {
+              p {
+                display: block;
+                animation: fade 1s ease forwards;
+              }
+              @keyframes fade {
+                from {
+                  opacity: 0;
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+        .revenue-management {
+          a {
+            .img {
+              background: url(../img/homepage-services/revenue-management-bg.jpg)
+                center center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .digital-marketing {
+          a {
+            .img {
+              background: url(../img/homepage-services/digital-marketing-bg.jpg)
+                center center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .website-development {
+          a {
+            .img {
+              background: url(../img/homepage-services/website-development-bg.jpg)
+                center center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .sales-support {
+          a {
+            .img {
+              background: url(../img/homepage-services/sales-support-bg.jpg)
+                center center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .orm {
+          a {
+            .img {
+              background: url(../img/homepage-services/orm-bg.jpg) center center
+                no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .hotel-audit {
+          a {
+            .img {
+              background: url(../img/homepage-services/hotel-audit-bg.jpg)
+                center center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .graphic-design {
+          a {
+            .img {
+              background: url(../img/homepage-services/graphic-design-bg.jpg)
+                center center no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .hotel-photography{
+          .img {
+            background: url(../img/homepage-services/hotel-photography.jpg)
+              center center no-repeat;
+            background-size: cover;
+          }
+        }
+        .staff-training{
+          .img {
+            background: url(../img/homepage-services/staff-training.jpg)
+              center center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials{
+  background: linear-gradient(#fdfefd, #e2e9e1);
+  padding: 2% 0;
+  .container-fluid{
+    text-align: center;
+    h2{
+      font-family: Montez;
+      color: black;
+      font-size: 40px;
+    }
+    #carouselExampleCaptions{
+      .carousel-inner{
+        .carousel-item{
+          height: 60vh;
+          .carousel-caption{
+            top: 10%;
+            bottom: 0;
+            color: white;
+            border-radius: 30px;
+            padding: 2% 5%;
+          }
+          .bg-colour-1{
+            background: linear-gradient(to right, #6e85c8, #96b4e8);
+          }
+          .bg-colour-2{
+            background: linear-gradient(to right, #227bbf, #42b2e0);
+          }
+          .bg-colour-3{
+            background: linear-gradient(to right, #446dd8, #446dd8);
+          }
+          .bg-colour-4{
+            background: linear-gradient(to right, #3b9db8, #71bcd7);
+          }
+        }
+      }
+    }
+  }
+}
+
+.who-we-are {
+  padding: 5% 0;
+  color: #3d2645;
+  .container {
+    .who-we-are-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // padding: 0 8%;
+      h2 {
+        text-transform: capitalize;
+
+        // font-weight: 900;
+        // margin: 10px;
+        color: #000;
+      }
+      h4 {
+          font-family: Montez;
+          color: black;
+          font-size: 40px;
+          // font-weight: 900;
+        // margin: 10px;
+      }
+    }
+    .col-md-6{
+      .carousel{
+        .carousel-inner{
+          .who-we-are-image {
+            height: 350px;
+            background: url(../img/team.jpeg) center center no-repeat;
+            background-size: cover;
+          }
+          .who-we-are-image1 {
+            height: 350px;
+            background: url(../img/who-we-are-slider-1.jpeg) center center no-repeat;
+            background-size: cover;
+          }
+          .who-we-are-image2 {
+            height: 350px;
+            background: url(../img/who-we-are-slider-2.jpeg) top center no-repeat;
+            background-size: cover;
+          }
+          .who-we-are-image3 {
+            height: 350px;
+            background: url(../img/who-we-are-slider-3.jpeg) top center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-contact-form {
+  padding: 8% 2%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/c1.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.intro-2 {
+  background: linear-gradient(#fdfefd, #e2e9e1);
+  color: #3d2645;
+  padding: 3% 0;
+  .growth-guaranteed {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // height: 50vh;
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+.born-for-hotels {
+  padding: 5% 0;
+  // height: 50vh;
+  h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 2%;
+    font-size: 35px;
+    font-weight: 900;
+    background-color: #832161;
+    // color:#3d2645;
+  }
+  .container {
+    .row {
+      .par1 {
+        font-size: 20px;
+        p{
+          a{
+            color: #212529;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Typewriter
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  h1 {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    // border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+//Typewriter
+
+//footer//
+.footer {
+  padding: 4% 0;
+  background: linear-gradient(#bc4e9c, #f80759);
+  color: white;
+  .container {
+    .row {
+      .website-links {
+        p {
+          a {
+            color: white;
+          }
+        }
+      }
+      .col-md-3 {
+        img{
+          height: 110px;
+        }
+        .social-media-links {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          p {
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//footer//
+
+.dropdown:hover {
+  position: relative;
+  display: inline-block;
+}
+// contact page
+.form-row {
+  // padding: 1%;
+  margin: 0px 8%;
+}
+.free {
+  padding: 1%;
+  margin: 0px 8%;
+   font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  text-align: left;
+  color: #832161;
+}
+.button1 {
+  margin: 0px 18%;
+  font-size: 30px;
+  color: #832161;
+  border-color: #832161;
+  // background-color: #832161;
+
+  // padding: 0px 0px 5%;
+}
+.button1:hover {
+  color: #fff;
+  background-color: #832161;
+  // border-color: #E7298F;
+}
+.button2 {
+  margin: 0px 18%;
+  font-size: 30px;
+  color: #ffffff;
+  border-color: #832161;
+  // background-color: #832161;
+
+  // padding: 0px 0px 5%;
+}
+.button2:hover {
+  color: #ffffff;
+  background-color: #e8288f;
+  // border-color: #E7298F;
+}
+
+// Our Service start
+
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+.made_by {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+// socia media
+.digital-1{
+  padding: 3% 0;
+  text-align: center;
+  h3 {
+    font-family: "Montez", cursive;
+    font-size: 50px;
+    padding: 1% 0;
+  }
+  p {
+    font-size: 22px;
+    line-height: 34px;
+    padding: 1% 0;
+  }
+}
+.cover-sm {
+  height: 100vh;
+  background: url(../img/smm.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.digital-3 {
+  padding: 2% 0;
+}
+.digital-4{
+  padding: 2% 0;
+  .row{
+    .col-md-6{
+      h3{
+        font-size: 42px;
+        line-height: 48px;
+      }
+    }
+  }
+}
+
+
+//WEBSITE DESIGN
+.cover-wd {
+  height: 100vh;
+  background: url(../img/webdev1.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+
+.web-1 {
+  h3 {
+    font-size: 50px;
+    text-align: center;
+    font-family: Montez;
+    padding-top: 50px;
+  }
+  p {
+    font-size: 24px;
+    padding:60px 0;
+  }
+}
+.web-2 {
+  .row {
+    .col-md-2 {
+      text-align: center;
+      padding: 3% 0;
+    }
+  }
+}
+.web-3 {
+  p {
+    font-size: 24px;
+  }
+}
+.web-6{
+  .row{
+    .col-md-6{
+      h3{
+        font-size: 42px;
+        line-height: 48px;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+// END WEBSITE DESIGN
+
+//sales support
+.cover-ss {
+  height: 100vh;
+  background: url(../img/sales2.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.support-1 {
+  h3 {
+    font-size: 50px;
+    text-align: center;
+    font-family: Montez;
+    padding-top: 50px;
+  }
+  p {
+    font-size: 24px;
+    padding:60px 0;
+  }
+}
+
+//ORM
+.cover-orm {
+  height: 100vh;
+  background: url(../img/orm-cover.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.orm-1 {
+  padding: 3% 0;
+  text-align: center;
+  h3 {
+    font-family: "Montez", cursive;
+    font-size: 50px;
+    padding: 1% 0;
+  }
+  p {
+    font-size: 22px;
+    line-height: 34px;
+    padding: 1% 0;
+  }
+}
+
+//Hotel audit
+.cover-ha {
+  height: 100vh;
+  background: url(../img/audit-page-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+
+.cover-lease {
+  height: 100vh;
+  background: url(../img/family-with-children-hotel-reception_81522-4029.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+
+.audit-1 {
+  padding: 3% 0;
+  text-align: center;
+  h3 {
+    font-family: "Montez", cursive;
+    font-size: 50px;
+    padding: 1% 0;
+  }
+  p {
+    font-size: 22px;
+    line-height: 34px;
+    padding: 1% 0;
+  }
+}
+// revenue management
+.cover-rm {
+  height: 100vh;
+  background: url(../img/revenue1.jpeg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.rm1 {
+  padding: 3% 0;
+  text-align: center;
+  h3 {
+    font-family: "Montez", cursive;
+    font-size: 50px;
+    padding: 1% 0;
+  }
+  p {
+    font-size: 22px;
+    line-height: 34px;
+    padding: 1% 0;
+  }
+}
+.rm2 {
+  .row {
+    .col-md-6 {
+      h3 {
+        font-size: 32px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 18px;
+        line-height: 31px;
+      }
+    }
+  }
+}
+
+.rm3 {
+  .row {
+    .col-md-6 {
+      h4 {
+        color: color(color6);
+        font-weight: 500;
+        font-size: 35px;
+      }
+      p {
+        line-height: 31px;
+        font-size: 17.5px;
+      }
+    }
+  }
+}
+
+.rm4 {
+  padding: 30px 0px 100px 0px;
+  h3 {
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 500;
+  }
+
+  .row {
+    padding-top: 40px;
+    .col-md-4 {
+      h4 {
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 25px;
+         font-family: 'Open Sans', sans-serif;
+        color: #666;
+      }
+      p {
+        font-size: 18px;
+        color: #2b2b2b;
+      }
+      .fas {
+        padding-top: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+.rm5 {
+  .container {
+    height: 40vh;
+    text-align: center;
+     font-family: 'Open Sans', sans-serif;
+    h3 {
+      font-size: 31px;
+      line-height: 45px;
+      font-weight: 500;
+       font-family: 'Open Sans', sans-serif;
+    }
+    .button {
+      border-radius: 7px;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 19px;
+      background-image: linear-gradient(to right, color(color6), #ff6699);
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}
+
+.rm-6 {
+  .row {
+    .col-md-6 {
+      h3 {
+         font-family: 'Open Sans', sans-serif;
+         font-size: 42px;
+         line-height: 48px;
+      }
+    }
+  }
+}
+.rm-faq {
+  h3 {
+    font-size: 42px;
+     font-family: 'Open Sans', sans-serif;
+     line-height: 48px;
+     padding-bottom: 30px;
+  }
+  .accordion {
+    .card {
+      .card-header {
+        .card-header {
+          h5 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.p11 {
+  background-color: #e7298f;
+  padding: 15% 20px 5px 20px;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.rm2 {
+  padding: 5% 5%;
+}
+// END RM
+
+//graphic design
+.cover-gd {
+  height: 100vh;
+  background: url(../img/graphic-page-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.graphic-1 {
+  padding: 3% 0;
+  text-align: center;
+  h3 {
+    font-family: "Montez", cursive;
+    font-size: 50px;
+    padding: 1% 0;
+  }
+  p {
+    font-size: 22px;
+    line-height: 34px;
+    padding: 1% 0;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+h2 {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.slick-slide {
+  margin: 10px;
+}
+.slick-slide img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+//career
+
+.career {
+  padding: 5% 10%;
+  .row {
+    .col-12 {
+      h1 {
+        font-style: italic;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 50px;
+      }
+      p {
+        font-size: 20px;
+      }
+      b {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+//Careers Page
+.cover-career {
+  height: 100vh;
+  background: url(../img/careers-bg-image-1.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.career_1 {
+  padding: 3% 0;
+  text-align: center;
+  h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+.career_2 {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.career_3 {
+  text-align: center;
+  padding: 2% 0;
+  h3 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .row {
+    .col-md-4 {
+      padding: 4% 1%;
+    }
+  }
+}
+
+.career_5 {
+  padding: 2% 0;
+  h3 {
+    font-size: 42px;
+    line-height: 48px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .card {
+    .card-body {
+      padding: 6%;
+      h5 {
+        font-size: 28px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .btn {
+        background-color: #e8288f;
+        a {
+          color: #ffffff;
+        }
+        a:hover {
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.career_6 {
+  padding: 3% 0;
+  h2 {
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.career-job {
+  padding: 2% 0;
+  h3 {
+    font-size: 35px;
+  }
+  .row {
+    padding: 1% 0;
+    .col-md-3 {
+      height: 40vh;
+      h3 {
+        color: color(color2);
+        font-size: 22px;
+        font-weight: 500;
+        height: 10vh;
+         font-family: 'Open Sans', sans-serif;
+      }
+      a {
+        color: #777;
+      }
+    }
+  }
+}
+//END Careers Page
+
+// START EXPERTISE
+.cover-expertise {
+  height: 100vh;
+  background: url(../img/revenue1.jpeg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.exp-1{
+  background: linear-gradient(#fdfefd, #e2e9e1);
+}
+.exp-2 {
+  font-size: 20px;
+  h3 {
+    font-family: "Montez";
+    font-size: 42px;
+    line-height: 48px;
+  }
+  ul{
+    li{
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+}
+
+.exp-3 {
+  background: linear-gradient(#fdfefd, #e2e9e1);
+  font-size: 20px;
+  h3 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+
+// END EXPERTISE
+
+// START PORTFOLIO
+
+.cover-portfolio {
+  height: 100vh;
+  background: url(../img/portfoliopage.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+// END PORTFOLIO
+
+// START CONTACT
+.cover-contact {
+  height: 100vh;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+
+.contact-form {
+  padding-top: 70px;
+  height: 90vh;
+  h3 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Montez;
+  }
+  .row {
+    .col-md-6 {
+      form {
+        label{
+          font-family: 'Open Sans', sans-serif;
+        }
+        button {
+          color: white;
+          // background-color: rgb(116, 115, 187);
+          background-image: linear-gradient(to right, #6495ed, #ff69b4);
+          border: 0px solid;
+          width: 140px;
+          height: 50px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.contact-1 {
+  text-align: center;
+  .row {
+    padding: 50px 0px;
+  }
+  h3 {
+    font-size: 35px;
+    font-family: Montez;
+  }
+}
+// END CONTACT
+
+//Portfolio Page
+.satisfied-clients-1 {
+  padding: 3% 0;
+  text-align: center;
+  h2 {
+    font-family: "Montez";
+    font-size: 42px;
+    line-height: 48px;
+  }
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+}
+
+.satisfied-clients-2 {
+  .row {
+    margin: 2% 0;
+    .col-md-2 {
+      .card {
+        border-radius: 10px;
+        .card-body {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+//Portfolio Page
+
+
+.cover-covid-19-page{
+  height: 100vh;
+  background: url(../img/covid-banner.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .cover {
+    background-color: rgba(#666, 0.5);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h6 {
+      font-family: "Montez", cursive;
+      font-size: 40px;
+      color: #f0eff4;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Montez", cursive;
+      font-size: 100px;
+      color: #f0eff4;
+    }
+  }
+}
+.covid-19-page{
+  padding: 2% 0;
+  text-align: center;
+  .row{
+    padding: 2%;
+    h2{
+      color: #000;
+      text-align: center;
+      font-family: Montez;
+      font-size: 40px;
+    }
+    ul{
+      text-align: left;
+    }
+    .call-to-action{
+      text-align: left;
+      a{
+        color: black;
+        border: 2px solid black;
+        padding: 2%;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}

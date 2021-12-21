@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: 
+Allow: /index.html
+Allow: /covid-19.html
+Allow: /expertise.html
+Allow: /portfolio.html
+Allow: /career.html
+Allow: /international-hotel.html
+Allow: /revenuemanagement.html
